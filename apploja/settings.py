@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'holamundo.apps.HolamundoConfig'
+    'holamundo.apps.HolamundoConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
