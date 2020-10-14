@@ -1,1 +1,1 @@
-web: gunicorn apploja1.wsgi --log-file -
+web: gunicorn apploja.wsgi --log-file -
