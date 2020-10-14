@@ -8,7 +8,7 @@ class CarreraViewSet(viewsets.ModelViewSet):
     serializer_class=CarreraSerializer
 
 class ParaleloViewSet(viewsets.ModelViewSet):
-    queryset=Paralelo.objects.all().order_by('nombre')
+    queryset=Paralelo.objects.all().order_by('Carrera')
     serializer_class=ParaleloSerializer 
 
 class EstudianteViewSet(viewsets.ModelViewSet):

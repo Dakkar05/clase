@@ -4,19 +4,19 @@ from rest_framework import serializers
 class CarreraSerializer(serializers.ModelSerializer):
     class Meta:
         model=Carrera
-        fields={'nombCarrera','numCLiclos','numCreditos','codCarrera','numdocentes'}
+        fields=('nombCarrera','numCLiclos','numCreditos','codCarrera','numdocentes')
 
 class ParaleloSerializer(serializers.ModelSerializer):
     class Meta:
         model=Paralelo
-        fields={'carrera','ciclo','nombre','numeroEstudiantes'}
+        fields=('Carrera','ciclo','nombre','numeroEstudiantes')
 
 class EstudianteSerializer(serializers.ModelSerializer):
     class Meta:
         model=Estudiante
-        fields={'Nombre','Cedula','Telf','Edad'}
+        fields=('Nombre','Cedula','Telf','Edad')
 
 class DocenteSerializer(serializers.ModelSerializer):
     class Meta:
         model=Docente
-        fields={'Nombre','Cedula','Telf','Edad'}
+        fields=('Nombre','Cedula','Telf','Edad')

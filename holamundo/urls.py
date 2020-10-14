@@ -8,7 +8,7 @@ router=routers.DefaultRouter()
 router.register(r'carreras',views.CarreraViewSet)
 router.register(r'paralelo',views.ParaleloViewSet)
 router.register(r'estudiante',views.EstudianteViewSet)
-router.register(r'carreras',views.DocenteViewSet)
+router.register(r'docente',views.DocenteViewSet)
 
 urlpatterns = [
     path('',views.index,name='index'),
